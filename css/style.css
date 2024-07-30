@@ -1,0 +1,33 @@
+:root {
+    --logo-text: #FFF;
+    --hero-text: #94CFFF;
+    --button-color: #26C7EA;
+    --hero-title: #0A3853;
+    --text-paragraf: #0A3853;
+    --main-title: #141414;
+  }
+
+
+body {
+    font-family: "Headland One", "sans-serif";
+  }
+
+  .header-list {
+    color: var(--logo-text);
+font-family: "Inter", sans-serif;
+font-size: 20px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+  }
+
+  .header-button {
+    color: var(--button-color);
+text-align: justify;
+font-family: HeadlandOne;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+  }
+
