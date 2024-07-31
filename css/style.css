@@ -1,33 +1,234 @@
 :root {
-    --logo-text: #FFF;
-    --hero-text: #94CFFF;
-    --button-color: #26C7EA;
-    --hero-title: #0A3853;
-    --text-paragraf: #0A3853;
-    --main-title: #141414;
-  }
-
+  --logo-text: #fff;
+  --hero-text: #94cfff;
+  --button-color: #26c7ea;
+  --hero-title: #0a3853;
+  --text-paragraf: #0a3853;
+  --main-title: #141414;
+  --color-paragraf: #000;
+}
 
 body {
-    font-family: "Headland One", "sans-serif";
-  }
+  font-family: "Headland One", "sans-serif";
+}
 
-  .header-list {
-    color: var(--logo-text);
-font-family: "Inter", sans-serif;
-font-size: 20px;
-font-style: normal;
-font-weight: 300;
-line-height: normal;
-  }
+.container {
+  width: 1032px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 1px solid red;
+}
 
-  .header-button {
-    color: var(--button-color);
-text-align: justify;
-font-family: HeadlandOne;
-font-size: 20px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-  }
+.header {
+  background-image: url(../img/derevo.jpg);
+  background-repeat: no-repeat;
+  background-size: 1032px;
+  background-position: center;
+}
 
+.header-img {
+  width: 186px;
+  height: 72px;
+}
+
+.header-list {
+  color: var(--logo-text);
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.header-button {
+  color: var(--button-color);
+  text-align: justify;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  background-color: var(--text-paragraf);
+  border-radius: 35px 2px;
+}
+
+.hero-text {
+  color: var(--logo-text);
+  font-family: "Inter";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.hero-button {
+  color: var(--button-color);
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  background-color: var(--text-paragraf);
+  border-radius: 45px 0px;
+}
+
+.quote-title {
+  color: var(--text-paragraf);
+  text-align: justify;
+  font-family: "Inter";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.quote-text {
+  color: var(--color-paragraf);
+  text-align: center;
+  font-family: "Inter";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.quote-bird {
+  width: 400px;
+  height: 120px;
+}
+
+.traile-button {
+  color: var(--button-color);
+  text-align: justify;
+  font-family: HeadlandOne;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  background-color: var(--text-paragraf);
+  border-radius: 45px 0px;
+}
+
+.citation-title {
+  color: var(--main-title);
+  text-align: justify;
+  font-family: Inter;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.citation-text {
+  color: var(--color-paragraf);
+  text-align: justify;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.citation-bird {
+  width: 400px;
+  height: 120px;
+}
+
+.language-caption {
+  color: var(--main-title);
+  text-align: justify;
+  font-family: HeadlandOne;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.language-title {
+  color: var(--main-title);
+  text-align: justify;
+  font-family: HeadlandOne;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.language-leftarrow {
+  width: 152px;
+  height: 40px;
+}
+
+.language-smalbird {
+  width: 152px;
+  height: 40px;
+}
+
+.language-arrow {
+  width: 152px;
+  height: 40px;
+}
+
+.language-text {
+  color: var(--color-paragraf);
+  text-align: justify;
+  font-family: HeadlandOne;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 100% */
+}
+
+.mother-title {
+  color: var(--main-title);
+  text-align: justify;
+  font-family: Inter;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.mother-text {
+  color: var(--color-paragraf);
+  text-align: justify;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+mother-bird {
+  width: 400px;
+  height: 120px;
+}
+
+/* .footer {
+background-image: url(../img/derevo.jpg);
+background-repeat: no-repeat;
+} */
+
+.footer-logo {
+  width: 183px;
+  height: 70px;
+}
+
+.footer-text {
+  color: var(--logo-text);
+  text-align: justify;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.footer-link {
+  color: var(--logo-text);
+  text-align: justify;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
