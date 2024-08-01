@@ -20,35 +20,59 @@ body {
 }
 
 .header {
-  background-image: url(../img/derevo.jpg);
+  background-image: linear-gradient(rgba(43, 74, 97, 0.87), rgba(43, 74, 97, 0.87)), url(../img/derevo.jpg);
   background-repeat: no-repeat;
-  background-size: 1032px;
   background-position: center;
+  background-size: cover;
 }
+
+.header-box {
+  padding-top: 34px;
+  padding-bottom: 35px;
+}
+
+
 
 .header-img {
   width: 186px;
   height: 72px;
+  background-repeat: no-repeat;
+  margin-right: 168px;
+  
 }
 
 .header-list {
+  display: flex;
+}
+
+.header-item {
   color: var(--logo-text);
   font-family: "Inter", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 300;
-  line-height: normal;
+  line-height: 1.2;
+margin-right: 38px;
+margin-top: 63px;
 }
 
 .header-button {
   color: var(--button-color);
   text-align: justify;
   font-size: 20px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
+  line-height: 1.25;
   background-color: var(--text-paragraf);
   border-radius: 35px 2px;
+  margin-left: 212px;
+}
+
+.hero-brave {
+  background-image: url(../img/avatar.jpg);
+  background-size: cover;
+  padding-top: 180px;
+  padding-bottom: 464px;
+  
 }
 
 .hero-text {
@@ -57,7 +81,7 @@ body {
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
+  line-height: 1.2;
 }
 
 .hero-button {
@@ -66,7 +90,7 @@ body {
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
+  line-height: 1.25;
   background-color: var(--text-paragraf);
   border-radius: 45px 0px;
 }
@@ -78,7 +102,7 @@ body {
   font-size: 36px;
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
+  line-height: 1.22;
 }
 
 .quote-text {
@@ -88,7 +112,7 @@ body {
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
+  line-height: 1.14;
 }
 
 .quote-bird {
@@ -99,11 +123,10 @@ body {
 .traile-button {
   color: var(--button-color);
   text-align: justify;
-  font-family: HeadlandOne;
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
+  line-height: 1.25;
   background-color: var(--text-paragraf);
   border-radius: 45px 0px;
 }
@@ -111,21 +134,21 @@ body {
 .citation-title {
   color: var(--main-title);
   text-align: justify;
-  font-family: Inter;
+  font-family: "Inter";
   font-size: 36px;
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
+  line-height: 1.22;
 }
 
 .citation-text {
   color: var(--color-paragraf);
   text-align: justify;
-  font-family: Inter;
+  font-family: "Inter";
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
+  line-height: 1.2;
 }
 
 .citation-bird {
@@ -136,21 +159,19 @@ body {
 .language-caption {
   color: var(--main-title);
   text-align: justify;
-  font-family: HeadlandOne;
   font-size: 32px;
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
+  line-height: 1.25;
 }
 
 .language-title {
   color: var(--main-title);
   text-align: justify;
-  font-family: HeadlandOne;
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 1;
 }
 
 .language-leftarrow {
@@ -171,42 +192,36 @@ body {
 .language-text {
   color: var(--color-paragraf);
   text-align: justify;
-  font-family: HeadlandOne;
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px; /* 100% */
+  line-height: 1;
 }
 
 .mother-title {
   color: var(--main-title);
   text-align: justify;
-  font-family: Inter;
+  font-family: "Inter";
   font-size: 36px;
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
+  line-height: 1.22;
 }
 
 .mother-text {
   color: var(--color-paragraf);
   text-align: justify;
-  font-family: Inter;
+  font-family: "Inter";
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
+  line-height: 1.2;
 }
 
 mother-bird {
   width: 400px;
   height: 120px;
 }
-
-/* .footer {
-background-image: url(../img/derevo.jpg);
-background-repeat: no-repeat;
-} */
 
 .footer-logo {
   width: 183px;
@@ -216,19 +231,19 @@ background-repeat: no-repeat;
 .footer-text {
   color: var(--logo-text);
   text-align: justify;
-  font-family: Inter;
+  font-family: "Inter";
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
+  line-height: 1.2;
 }
 
 .footer-link {
   color: var(--logo-text);
   text-align: justify;
-  font-family: Inter;
+  font-family: "Inter";
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
+  line-height: 1.2;
 }
