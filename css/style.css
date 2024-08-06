@@ -133,7 +133,7 @@ body {
   padding: 10px 30px;
   width: 260px;
   border: none;
-  border: 3px var(--button-color);
+  border: 5px var(--button-color);
 }
 
 .hero-web {
