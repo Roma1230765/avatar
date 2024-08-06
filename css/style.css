@@ -20,29 +20,42 @@ body {
 }
 
 .header {
-  background-image: linear-gradient(rgba(43, 74, 97, 0.87), rgba(43, 74, 97, 0.87)), url(../img/derevo.jpg);
+  background-image: linear-gradient(
+      rgba(43, 74, 97, 0.87),
+      rgba(43, 74, 97, 0.87)
+    ),
+    url(../img/derevo.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .header-box {
+  display: flex;
   padding-top: 34px;
   padding-bottom: 35px;
+  align-items: center;
 }
-
-
 
 .header-img {
   width: 186px;
   height: 72px;
   background-repeat: no-repeat;
   margin-right: 168px;
-  
 }
 
 .header-list {
   display: flex;
+  gap: 38px;
+}
+
+.header-main {
+  color: var(--hero-text);
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.2;
 }
 
 .header-item {
@@ -52,8 +65,6 @@ body {
   font-style: normal;
   font-weight: 300;
   line-height: 1.2;
-margin-right: 38px;
-margin-top: 63px;
 }
 
 .header-button {
@@ -65,14 +76,39 @@ margin-top: 63px;
   background-color: var(--text-paragraf);
   border-radius: 35px 2px;
   margin-left: 212px;
+  padding: 9px 38px;
+  border: none;
+}
+
+.hero-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .hero-brave {
   background-image: url(../img/avatar.jpg);
   background-size: cover;
   padding-top: 180px;
-  padding-bottom: 464px;
-  
+  padding-bottom: 180px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-title {
+  color: var(--logo-text);
+  font-family: "Inter";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 40px;
+  width: 298px;
 }
 
 .hero-text {
@@ -82,6 +118,7 @@ margin-top: 63px;
   font-style: normal;
   font-weight: 400;
   line-height: 1.2;
+  width: 376px;
 }
 
 .hero-button {
@@ -93,6 +130,27 @@ margin-top: 63px;
   line-height: 1.25;
   background-color: var(--text-paragraf);
   border-radius: 45px 0px;
+  padding: 10px 30px;
+  width: 260px;
+  border: none;
+  border: 3px var(--button-color);
+}
+
+.hero-web {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: flex-end;
+}
+
+.quote-item {
+  display: flex;
+  justify-content: center;
+}
+
+.quote-citation {
+  justify-content: center;
+  display: flex;
 }
 
 .quote-title {
@@ -120,6 +178,20 @@ margin-top: 63px;
   height: 120px;
 }
 
+.traile {
+  background-image: url(../img/devochka.jpg);
+  background-size: cover;
+  padding-top: 355px;
+  padding-bottom: 356px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.traile-link {
+  display: flex;
+  justify-content: center;
+}
+
 .traile-button {
   color: var(--button-color);
   text-align: justify;
@@ -129,6 +201,18 @@ margin-top: 63px;
   line-height: 1.25;
   background-color: var(--text-paragraf);
   border-radius: 45px 0px;
+  border: 3px var(--button-color);
+  padding: 25px 20px;
+}
+
+.citation-item {
+  justify-content: center;
+  display: flex;
+}
+
+.citation-secondary {
+  display: flex;
+  justify-content: center;
 }
 
 .citation-title {
@@ -154,6 +238,20 @@ margin-top: 63px;
 .citation-bird {
   width: 400px;
   height: 120px;
+}
+
+.language-item {
+  background-color: rgba(255, 255, 255, 0.7);
+  /* display: flex;
+  justify-content: center;
+  padding-top: 36px;
+  padding-bottom: 180px; */
+}
+
+.language {
+  background-image: url(../img/gori.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .language-caption {
@@ -208,6 +306,11 @@ margin-top: 63px;
   line-height: 1.22;
 }
 
+.mother-item {
+  display: flex;
+  justify-content: center;
+}
+
 .mother-text {
   color: var(--color-paragraf);
   text-align: justify;
@@ -218,14 +321,37 @@ margin-top: 63px;
   line-height: 1.2;
 }
 
+.mother-citation {
+  display: flex;
+  justify-content: center;
+}
+
+.mother-quote {
+  display: flex;
+  justify-content: center;
+}
+
 mother-bird {
   width: 400px;
   height: 120px;
 }
 
+.footer {
+  background-image: url(../img/derevo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* padding-top: 77px;
+  padding-bottom: 76px; */
+}
+
 .footer-logo {
   width: 183px;
   height: 70px;
+}
+
+.footer-item {
+  display: flex;
+  align-items: center;
 }
 
 .footer-text {

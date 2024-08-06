@@ -24,55 +24,50 @@
     <header class="header">
       <div class="container header-box">
         <a href="#" class="header-link">
-          <img src="./img/logoavatar.png" alt="avatar 2" class="header-img" />
+          <img src="./img/avatars.png" alt="avatar 2" class="header-img" />
         </a>
         <nav class="navigation">
           <ul class="header-list">
-            <li class="header-item">Головна</li>
+            <li class="header-main">Головна</li>
             <li class="header-item">Про нас</li>
             <li class="header-item">Контакти</li>
-            <li class="header-item">
-              <button class="header-button">Увійти</button>
-            </li>
-            <li class="header-link">
-              <a href="#" class="header-ENG"
-                ><img src="./img/ENG.jpg" alt="слово ENG"
-              /></a>
-            </li>
-            <a href="#"><img src="./img/UA.jpg" alt="слово UA" /></a>
-            <li class="header-link"></li>
           </ul>
         </nav>
+
+        <button class="header-button">Увійти</button>
       </div>
     </header>
     <main class="hero">
       <section class="hero-brave">
-        <div class="container">
-          <ul class="hero-list">
-            <li class="hero-item">
-              <p class="hero-text">
-                Oe perlltxe hu tsamsiyu! Ngari hu Eywa salew tirea, tokx 'ì'awn
-                slu Na'viyä hapxì. Säwem nìayoeng!
-              </p>
+        <div class="container hero-box">
+          <div>
+            <ul class="hero-list">
+              <li class="hero-item">
+                <p class="hero-text">
+                  Oe perlltxe hu tsamsiyu! Ngari hu Eywa salew tirea, tokx
+                  'ì'awn slu Na'viyä hapxì. Säwem nìayoeng!
+                </p>
+                <img src="./img/arrow.png" alt="стріла" class="hero-arrow" />
+              </li>
+              <li class="hero-item">
+                <p class="hero-title">
+                  Хоробрий воїне, звертаюсь до тебе! Твій дух йде з Ейвою, твоє
+                  тіло залишається, щоб стати частиною Народу. Борись разом з
+                  нами!
+                </p>
+              </li>
+            </ul>
+            <button class="hero-button">Приєднатися до клану</button>
+          </div>
+          <ul class="hero-web">
+            <li>
+              <img src="./img/inst.png" alt="insta" class="hero-img" />
             </li>
-            <li class="hero-item">
-              <p class="hero-text">
-                Хоробрий воїне, звертаюсь до тебе! Твій дух йде з Ейвою, твоє
-                тіло залишається, щоб стати частиною Народу. Борись разом з
-                нами!
-              </p>
+            <li>
+              <img src="./img/twitter.png" alt="twitter" class="hero-img" />
             </li>
-            <li class="hero-item">
-              <button class="hero-button">Приєднатися до клану</button>
-            </li>
-            <li class="hero-item">
-              <img src="./img/inst.jpg" alt="insta" class="hero-img" />
-            </li>
-            <li class="hero-item">
-              <img src="./img/twitter.jpg" alt="twitter" class="hero-img" />
-            </li>
-            <li class="hero-item">
-              <img src="./img/youtube.jpg" alt="youtube" class="hero-img" />
+            <li>
+              <img src="./img/youtube.png" alt="youtube" class="hero-img" />
             </li>
           </ul>
         </div>
@@ -82,8 +77,10 @@
           <ul class="quote-list">
             <li class="quote-item">
               <h1 class="quote-title">
-                “БАГАТО ЛЮДЕЙ З НЕБА ПРИЙДЕ. ВОНИ ПРИЙДУТЬ, ЯК ГРОЗА, ЯКА НІКОЛИ
-                НЕ ЗАКІНЧУЄТЬСЯ.”
+                <span class="quote-citation">
+                  “БАГАТО ЛЮДЕЙ З НЕБА ПРИЙДЕ. ВОНИ
+                </span>
+                ПРИЙДУТЬ, ЯК ГРОЗА, ЯКА НІКОЛИ НЕ ЗАКІНЧУЄТЬСЯ.”
               </h1>
             </li>
             <li class="quote-item">
@@ -104,6 +101,7 @@
           <a
             href="https://www.youtube.com/watch?v=d9MyW72ELq0"
             class="traile-link"
+            target="_blank"
             ><button class="traile-button">Дивитись трейлер</button></a
           >
         </div>
@@ -113,8 +111,12 @@
           <ul class="citation-list">
             <li class="citation-item">
               <h2 class="citation-title">
-                “ВСЯ ЕНЕРГІЯ ЛИШЕ ЗАПОЗИЧЕНА, ОДНОГО ДНЯ ЇЇ ДОВЕДЕТЬСЯ
-                ПОВЕРНУТИ.”
+                <span class="citation-highlight"
+                  >“ВСЯ ЕНЕРГІЯ ЛИШЕ ЗАПОЗИЧЕНА, ОДНОГО ДНЯ</span
+                >
+                <span class="citation-secondary"
+                  >ЇЇ ДОВЕДЕТЬСЯ ПОВЕРНУТИ.”</span
+                >
               </h2>
             </li>
             <li class="citation-item">
@@ -139,7 +141,7 @@
             <li class="language-item">
               <h4 class="language-title">Привіт</h4>
             </li>
-            <li>
+            <li class="language-item">
               <img
                 src="./img/leftstila.png"
                 alt="стріла"
@@ -218,12 +220,15 @@
           <ul class="mother-list">
             <li class="mother-item">
               <h4 class="mother-title">
-                “НАША ВЕЛИКА МАТИ НЕ СТАЄ НА ЯКУСЬ СТОРОНУ, ВОНА ЗАХИЩАЄ ЛИШЕ
-                ЖИТТЄВИЙ БАЛАНС.”
+                <span class="mother-citation"
+                  >“НАША ВЕЛИКА МАТИ НЕ СТАЄ НА ЯКУСЬ СТОРОНУ,</span
+                ><span class="mother-quote">
+                  ВОНА ЗАХИЩАЄ ЛИШЕ ЖИТТЄВИЙ БАЛАНС.”</span
+                >
               </h4>
             </li>
             <li class="mother-item"><p class="mother-text">Нейтірі</p></li>
-            <li class="mother-list">
+            <li class="mother-item">
               <img
                 src="./img/ptichka.png"
                 alt="герб з стрілами"
@@ -235,7 +240,7 @@
       </section>
       <footer class="footer">
         <div class="container">
-          <img src="./img/logoavatar.png" alt="avatar 2" class="footer-logo" />
+          <img src="./img/avatars.png" alt="avatar 2" class="footer-logo" />
           <ul class="footer-list">
             <li class="footer-item"><p class="footer-text">Q&A E-mail</p></li>
             <li class="footer-item">
