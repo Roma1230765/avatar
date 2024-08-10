@@ -6,6 +6,7 @@
   --text-paragraf: #0a3853;
   --main-title: #141414;
   --color-paragraf: #000;
+  --background-button: #0b0e66;
 }
 
 body {
@@ -75,11 +76,12 @@ body {
   font-size: 20px;
   font-weight: 400;
   line-height: 1.25;
-  background-color: var(--text-paragraf);
+  background-color: var(--background-button);
   border-radius: 35px 2px;
   margin-left: 212px;
   padding: 9px 38px;
   border: none;
+  border: 3px solid var(--button-color);
 }
 
 .hero-box {
@@ -130,12 +132,11 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 1.25;
-  background-color: #0B0E66;
+  background-color: #0b0e66;
   border-radius: 45px 0px;
   padding: 10px 30px;
   width: 260px;
   border: 3px solid var(--button-color);
-
 }
 
 .hero-web {
@@ -151,12 +152,10 @@ body {
   text-align: center;
 }
 
-
-.quote-citation {
+/* .quote-citation {
   justify-content: center;
   display: flex;
-}
-
+} */
 
 .quote-title {
   color: var(--text-paragraf);
@@ -165,17 +164,18 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 1.22;
-  width: 1002px;
+  /* width: 1002px; */
   margin: 0;
 }
-.span {
+.quote-lot {
   display: block;
+  text-align: center;
 }
 
-.spann {
-  width: 1032px;
+.quoto-storm {
+  /* width: 1032px; */
   display: block;
-
+  text-align: center;
 }
 
 .quote-text {
@@ -218,25 +218,30 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 1.25;
-  background-color: var(--text-paragraf);
+  background-color: var(--background-button);
   border-radius: 45px 0px;
-  border: 3px var(--button-color);
   padding: 25px 20px;
+  border: 3px solid var(--button-color);
 }
 
-.citation-item {
-  justify-content: center;
-  display: flex;
+.citation {
+  padding-top: 75px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.citation-highlight {
+  display: block;
+  text-align: center;
 }
 
 .citation-secondary {
-  display: flex;
-  justify-content: center;
+  display: block;
+  text-align: center;
 }
 
 .citation-title {
   color: var(--main-title);
-  text-align: justify;
   font-family: "Inter";
   font-size: 36px;
   font-style: normal;
@@ -246,36 +251,52 @@ body {
 
 .citation-text {
   color: var(--color-paragraf);
-  text-align: justify;
+  /* display: block;
+  text-align: center; */
   font-family: "Inter";
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
   line-height: 1.2;
+  margin-bottom: 8px;
+  margin-top: 16px;
 }
 
 .citation-bird {
   width: 400px;
   height: 120px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.language-item {
+/* .language-item {
   background-color: rgba(255, 255, 255, 0.7);
   /* display: flex;
   justify-content: center;
   padding-top: 36px;
   padding-bottom: 180px; */
-}
+/* } */
 
 .language {
   background-image: url(../img/gori.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  padding-top: 58px;
+  padding-bottom: 93px;
+
+}
+
+.language-box {
+  gap: 36px;
+  background-color: rgba(255, 255, 255, 0.7);
+  display: grid;
+justify-items: center;
+align-items: center;
 }
 
 .language-caption {
   color: var(--main-title);
-  text-align: justify;
+  text-align: center;
   font-size: 32px;
   font-style: normal;
   font-weight: 400;
@@ -315,6 +336,12 @@ body {
   line-height: 1;
 }
 
+.mother {
+  padding-top: 75px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
 .mother-title {
   color: var(--main-title);
   text-align: justify;
@@ -325,42 +352,46 @@ body {
   line-height: 1.22;
 }
 
-.mother-item {
-  display: flex;
-  justify-content: center;
+.mother-citation {
+  display: block;
+  text-align: center;
+}
+
+.mother-quote {
+  display: block;
+  text-align: center;
 }
 
 .mother-text {
   color: var(--color-paragraf);
-  text-align: justify;
+  /* display: block;
+ text-align: center; */
   font-family: "Inter";
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
   line-height: 1.2;
+  margin-bottom: 8px;
+  margin-top: 16px;
 }
 
-.mother-citation {
-  display: flex;
-  justify-content: center;
-}
-
-.mother-quote {
-  display: flex;
-  justify-content: center;
-}
-
-mother-bird {
+.mother-bird {
   width: 400px;
   height: 120px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .footer {
-  background-image: url(../img/derevo.jpg);
+  background-image: linear-gradient(
+    rgba(43, 74, 97, 0.87),
+    rgba(43, 74, 97, 0.87)
+  ),
+  url(../img/derevo.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  /* padding-top: 77px;
-  padding-bottom: 76px; */
+  padding-top: 77px;
+  padding-bottom: 25px;
 }
 
 .footer-logo {
@@ -368,14 +399,21 @@ mother-bird {
   height: 70px;
 }
 
-.footer-item {
+/* .footer-box {
+  color: var(--logo-text);
+  width: 153px;
+  height: 1px;
+} */
+
+.footer-list {
   display: flex;
   align-items: center;
+  gap: 80px;
+  flex-wrap: wrap;
 }
 
 .footer-text {
   color: var(--logo-text);
-  text-align: justify;
   font-family: "Inter";
   font-size: 20px;
   font-style: normal;
@@ -385,7 +423,6 @@ mother-bird {
 
 .footer-link {
   color: var(--logo-text);
-  text-align: justify;
   font-family: "Inter";
   font-size: 20px;
   font-style: normal;
