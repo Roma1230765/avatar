@@ -421,6 +421,17 @@ gap: 40px;
 
 }
 
+.footer-link {
+  color: #FFF;
+
+text-align: justify;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
 .footer-paragraf {
   color: #FFF;
 text-align: center;
