@@ -1,268 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Headland+One&family=Inter:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
-      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
-  <body>
-    <header class="header">
-      <div class="container header-box">
-        <a href="#" class="header-link">
-          <img src="./img/avatars.png" alt="avatar 2" class="header-img" />
-        </a>
-        <nav class="navigation">
-          <ul class="header-list">
-            <li class="header-main">Головна</li>
-            <li class="header-item">Про нас</li>
-            <li class="header-item">Контакти</li>
-          </ul>
-        </nav>
 
-        <button class="header-button">Увійти</button>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Avatar</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="icon" href="/img/avatars.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Headland+One&family=Inter:wght@100..900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+    integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header-box">
+      <a href="#" class="header-link">
+        <img src="./img/avatars.png" alt="avatar 2" class="header-img scale-down-center animate__animated animate__backInLeft" />
+      </a>
+      <nav class="navigation">
+        <ul class="header-list">
+          <li class="header-main slide-top animate__animated animate__flash">Головна</li>
+          <li class="header-item scale-down-center animate__animated animate__flash">Про нас</li>
+          <li class="header-item scale-down-center animate__animated animate__flash">Контакти</li>
+        </ul>
+      </nav>
+
+      <button class="header-button rotate-90-cw animate__animated animate__backInRight">Увійти</button>
+    </div>
+  </header>
+  <main class="hero">
+    <section class="hero-brave">
+      <div class="container hero-box">
+        <div>
+          <ul data-aos="flip-up" class="hero-list">
+            <li class="hero-item ">
+              <p class="hero-text ">
+                Oe perlltxe hu tsamsiyu! Ngari hu Eywa salew tirea, tokx
+                'ì'awn slu Na'viyä hapxì. Säwem nìayoeng!
+              </p>
+              <img src="./img/arrow.png" alt="стріла" class="hero-arrow" />
+            </li>
+            <li class="hero-item">
+              <p class="hero-title">
+                Хоробрий воїне, звертаюсь до тебе! Твій дух йде з Ейвою, твоє
+                тіло залишається, щоб стати частиною Народу. Борись разом з
+                нами!
+              </p>
+            </li>
+          </ul>
+          <button class="hero-button slide-top animate__animated animate__flash">Приєднатися до клану</button>
+        </div>
+        <ul class="hero-web">
+          <li>
+            <img src="./img/inst.png" alt="insta" class="hero-img swing-bottom-right-bck" />
+          </li>
+          <li>
+            <img src="./img/twitter.png" alt="twitter" class="hero-img swing-bottom-right-bck" />
+          </li>
+          <li>
+            <img src="./img/youtube.png" alt="youtube" class="hero-img swing-bottom-right-bck" />
+          </li>
+        </ul>
       </div>
-    </header>
-    <main class="hero">
-      <section class="hero-brave">
-        <div class="container hero-box">
-          <div>
-            <ul class="hero-list">
-              <li class="hero-item">
-                <p class="hero-text">
-                  Oe perlltxe hu tsamsiyu! Ngari hu Eywa salew tirea, tokx
-                  'ì'awn slu Na'viyä hapxì. Säwem nìayoeng!
-                </p>
-                <img src="./img/arrow.png" alt="стріла" class="hero-arrow" />
-              </li>
-              <li class="hero-item">
-                <p class="hero-title">
-                  Хоробрий воїне, звертаюсь до тебе! Твій дух йде з Ейвою, твоє
-                  тіло залишається, щоб стати частиною Народу. Борись разом з
-                  нами!
-                </p>
-              </li>
-            </ul>
-            <button class="hero-button">Приєднатися до клану</button>
-          </div>
-          <ul class="hero-web">
-            <li>
-              <img src="./img/inst.png" alt="insta" class="hero-img" />
-            </li>
-            <li>
-              <img src="./img/twitter.png" alt="twitter" class="hero-img" />
-            </li>
-            <li>
-              <img src="./img/youtube.png" alt="youtube" class="hero-img" />
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="quote">
-        <div class="container">
-          <ul class="quote-list">
-            <li class="quote-item">
-              <blockquote class="quote-title">
-                <span class="quote-lot">
-                  “БАГАТО ЛЮДЕЙ З НЕБА ПРИЙДЕ. ВОНИ</span
-                >
-                <span class="quote-storm">
-                  ПРИЙДУТЬ, ЯК ГРОЗА, ЯКА НІКОЛИ НЕ ЗАКІНЧУЄТЬСЯ.”</span
-                >
-              </blockquote>
-            </li>
-            <li class="quote-item">
-              <cite class="quote-text">Джейк Саллі</cite>
-            </li>
-            <li class="quote-item">
-              <img
-                src="./img/ptichka.png"
-                alt="герб з стрілами"
-                class="quote-bird"
-              />
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="traile">
-        <div class="container">
-        
-            <button class="traile-button"><a href="https://www.youtube.com/watch?v=d9MyW72ELq0"class="traile-link" target="_blank">Дивитись трейлер</a></button>
-          </div>
-      </section>
-      <section class="citation">
-        <div class="container">
-          <ul class="citation-list">
-            <li class="citation-item">
-              <blockquote class="citation-title">
-                <span class="citation-highlight"
-                  >“ВСЯ ЕНЕРГІЯ ЛИШЕ ЗАПОЗИЧЕНА, ОДНОГО ДНЯ</span
-                >
-                <span class="citation-secondary"
-                  >ЇЇ ДОВЕДЕТЬСЯ ПОВЕРНУТИ.”</span
-                >
-              </blockquote>
-            </li>
-            <li class="citation-item">
-              <cite class="citation-text">Джейк Саллі</cite>
-            </li>
-            <li class="citation-item">
-              <img
-                src="./img/ptichka.png"
-                alt="герб з стрілами"
-                class="citation-bird"
-              />
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="language">
-        <div class="container">
-          <h3 class="language-caption">Вчимо мову На’ві</h3>
-          <div class="language-catalogue">
-            <ul class="language-list">
-              <!-- <li class="language-item"> -->
-              <!-- </li> -->
-           
-                <li class="language-item">
-                  <p class="language-title">Привіт</p>
-                  <img
-                    src="./img/leftstila.png"
-                    alt="стріла"
-                    class="language-leftarrow"
-                  />
-                
-                  <p class="language-text">Kaltxì</p>
-                </li>
+    </section>
+    <section class="quote">
+      <div class="container">
+        <ul class="quote-list">
+          <li class="quote-item">
+            <blockquote data-aos="flip-left" class="quote-title">
+              <span class="quote-lot">
+                “БАГАТО ЛЮДЕЙ З НЕБА ПРИЙДЕ. ВОНИ</span>
+              <span class="quote-storm">
+                ПРИЙДУТЬ, ЯК ГРОЗА, ЯКА НІКОЛИ НЕ ЗАКІНЧУЄТЬСЯ.”</span>
+            </blockquote>
+          </li>
+          <li class="quote-item">
+            <cite class="quote-text">Джейк Саллі</cite>
+          </li>
+          <li class="quote-item">
+            <img src="./img/ptichka.png" alt="герб з стрілами" class="quote-bird" />
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="traile">
+      <div class="container">
 
-              
-             
-                <li class="language-item">
-                  <p class="language-title">Як справи?</p>
-           
-                  <img
-                    src="./img/malaptichka.png"
-                    alt="маленький герб з стрілами"
-                    class="language-smallbird"
-                  />
-                
-            
-             
-                  <p class="language-text">Ngaru lu fpom srak?</p>
-                </li>
-              
-                <li class="language-item">
-                  <p class="language-title">Все добре</p>
-                
-             
-               
-                  <img
-                    src="./img/strila.png"
-                    alt="стріла"
-                    class="language-arrow"
-                  />
-              
-              
-                  <p class="language-text">Lu fpom</p>
-                </li>
-              
-              
-                <li class="language-item">
-                  <p class="language-title">Дякую</p>
-             
-              
-                  <img
-                    src="./img/leftstila.png"
-                    alt="стріла"
-                    class="language-leftarrow"
-                  />
-                
-           
-                  <p class="language-text">Irayo si</p>
-                </li>
-              
-                <li class="language-item">
-                  <p class="language-title">Я бачу тебе</p>
-                
-                
-                  <img
-                    src="./img/malaptichka.png"
-                    alt="маленький герб з стрілами"
-                    class="language-smallbird"
-                  />
-                
-                  <p class="language-text">Oel ngati kameie</p>
-                </li>
-             
-                <li class="language-item">
-                  <p class="language-title">Слідуй за мною!</p>
-              
-                  <img
-                    src="./img/leftstila.png"
-                    alt="стріла"
-                    class="language-leftarrow"
-                  />
-               
-               
-                  <p class="language-text">Nong oet!</p>
-                </li>
-            
-            </ul>
-          </div>
-        </div>
-      </section>
-      <section class="mother">
-        <div class="container">
-          <ul class="mother-list">
-            <li class="mother-item">
-              <blockquote class="mother-title">
-                <span class="mother-citation"
-                  >“НАША ВЕЛИКА МАТИ НЕ СТАЄ НА ЯКУСЬ СТОРОНУ,</span
-                ><span class="mother-quote">
-                  ВОНА ЗАХИЩАЄ ЛИШЕ ЖИТТЄВИЙ БАЛАНС.”</span
-                >
-              </blockquote>
+        <button class="traile-button slide-top"><a href="https://www.youtube.com/watch?v=d9MyW72ELq0"
+            class="traile-link" target="_blank">Дивитись трейлер</a></button>
+      </div>
+    </section>
+    <section class="citation">
+      <div class="container">
+        <ul class="citation-list">
+          <li class="citation-item">
+            <blockquote data-aos="flip-up" class="citation-title">
+              <span class="citation-highlight">“ВСЯ ЕНЕРГІЯ ЛИШЕ ЗАПОЗИЧЕНА, ОДНОГО ДНЯ</span>
+              <span class="citation-secondary">ЇЇ ДОВЕДЕТЬСЯ ПОВЕРНУТИ.”</span>
+            </blockquote>
+          </li>
+          <li class="citation-item">
+            <cite class="citation-text">Джейк Саллі</cite>
+          </li>
+          <li class="citation-item">
+            <img src="./img/ptichka.png" alt="герб з стрілами" class="citation-bird" />
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="language">
+      <div class="container">
+        <h3 class="language-caption">Вчимо мову На’ві</h3>
+        <div class="language-catalogue">
+          <ul   class="language-list">
+            <!-- <li class="language-item"> -->
+            <!-- </li> -->
+
+            <li data-aos="fade-right" data-aos-duration="3000" class="language-item shadow-drop-bottom">
+              <p class="language-title">Привіт</p>
+              <img src="./img/leftstila.png" alt="стріла" class="language-leftarrow" />
+
+              <p class="language-text">Kaltxì</p>
             </li>
-            <li class="mother-item">
-              <cite class="mother-text">Нейтірі</cite>
+
+
+
+            <li data-aos="fade-down" data-aos-duration="3000" class="language-item shadow-drop-bottom">
+              <p class="language-title">Як справи?</p>
+
+              <img src="./img/malaptichka.png" alt="маленький герб з стрілами" class="language-smallbird" />
+
+
+
+              <p class="language-text">Ngaru lu fpom srak?</p>
             </li>
-            <li class="mother-item">
-              <img
-                src="./img/ptichka.png"
-                alt="герб з стрілами"
-                class="mother-bird"
-              />
+
+            <li data-aos="fade-left" data-aos-duration="3000" class="language-item shadow-drop-bottom">
+              <p class="language-title">Все добре</p>
+
+
+
+              <img src="./img/strila.png" alt="стріла" class="language-arrow" />
+
+
+              <p class="language-text">Lu fpom</p>
             </li>
+
+
+            <li data-aos="fade-right" data-aos-duration="3000" class="language-item shadow-drop-bottom">
+              <p class="language-title">Дякую</p>
+
+
+              <img src="./img/leftstila.png" alt="стріла" class="language-leftarrow" />
+
+
+              <p class="language-text">Irayo si</p>
+            </li>
+
+            <li data-aos="fade-up" data-aos-duration="3000" class="language-item shadow-drop-bottom">
+              <p class="language-title">Я бачу тебе</p>
+
+
+              <img src="./img/malaptichka.png" alt="маленький герб з стрілами" class="language-smallbird" />
+
+              <p class="language-text">Oel ngati kameie</p>
+            </li>
+
+            <li data-aos="fade-left" data-aos-duration="3000" class="language-item shadow-drop-bottom">
+              <p class="language-title">Слідуй за мною!</p>
+
+              <img src="./img/leftstila.png" alt="стріла" class="language-leftarrow" />
+
+
+              <p class="language-text">Nong oet!</p>
+            </li>
+
           </ul>
         </div>
-      </section>
-      <footer class="footer">
-        <div class="container footer-vripe">
-          <img src="./img/avatars.png" alt="avatar 2" class="footer-logo" />
-          <div class="footer-line"></div>
-          <div class="footer-vix">
+      </div>
+    </section>
+    <section class="mother">
+      <div class="container">
+        <ul class="mother-list">
+          <li class="mother-item">
+            <blockquote data-aos="zoom-in" class="mother-title">
+              <span class="mother-citation">“НАША ВЕЛИКА МАТИ НЕ СТАЄ НА ЯКУСЬ СТОРОНУ,</span><span
+                class="mother-quote">
+                ВОНА ЗАХИЩАЄ ЛИШЕ ЖИТТЄВИЙ БАЛАНС.”</span>
+            </blockquote>
+          </li>
+          <li class="mother-item">
+            <cite class="mother-text">Нейтірі</cite>
+          </li>
+          <li class="mother-item">
+            <img src="./img/ptichka.png" alt="герб з стрілами" class="mother-bird" />
+          </li>
+        </ul>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container footer-vripe">
+        <img src="./img/avatars.png" alt="avatar 2" class="footer-logo scale-down-center" />
+        <div class="footer-line"></div>
+        <div class="footer-vix">
           <ul class="footer-list">
-<li class="footer-item"><a href="" class="footer-link">Q&A E-mail - - - - - - - - - - - - - -  avatartwowqa@gmail.com</a></li>
-<li class="footer-item"><a href="" class="footer-link">Cooperation E-mail - - - - - - - - - - - avatartwowcoop@gmail.com</a></li>
+            <li class="footer-item shadow-pop-tr"><a href="" class="footer-link">Q&A E-mail - - - - - - - - - - - - - -
+                avatartwowqa@gmail.com</a></li>
+            <li class="footer-item shadow-pop-tr"><a href="" class="footer-link">Cooperation E-mail - - - - - - - - - - -
+                avatartwowcoop@gmail.com</a></li>
           </ul>
           <p class="footer-paragraf">©2023 Avatar: The Way Of Water. All rights reserved</p>
         </div>
       </div>
-      </footer>
-    </main>
-  </body>
+    </footer>
+  </main>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
 </html>
